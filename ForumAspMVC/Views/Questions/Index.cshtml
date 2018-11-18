@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ForumAspMVC.Models.Question>
+
+@{
+    ViewBag.Title = "Questions";
+    //Layout = "../Shared/_Layout.cshtml";
+}
+
+<h2>Questions</h2>
+
+<ul>
+    @foreach (var Question in Model)
+    {
+        <li><b>@Question.Title</b> @Question.Text <i>@Question.Date</i></li>
+
+    }
+</ul>
